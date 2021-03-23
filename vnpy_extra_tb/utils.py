@@ -29,8 +29,8 @@ class TBArrayManager(ArrayManager):
 
 
 class TBCtaSignal(CtaSignal):
-    def __init__(self, period: int, array_size: int, interval: Interval = Interval.MINUTE, filter_n_available=1):
-        super().__init__(period=period, array_size=array_size, interval=interval, filter_n_available=filter_n_available)
+    def __init__(self, array_size: int, **kwargs):
+        super().__init__(array_size=array_size, **kwargs)
         self.am = TBArrayManager(size=array_size)
         # 对应 TB 中用于记录上一次进场到现在的数量
         self.bars_since_entry = 0
