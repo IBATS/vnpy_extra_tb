@@ -13,7 +13,7 @@ with open("README.md", "r", encoding='utf-8') as rm:
     long_description = rm.read()
 packages = find_packages(exclude=['scripts', 'scripts.*'])
 setup(name='vnpy_extra_tb',
-      version='0.1.20210311.0',
+      version='0.1.20210323.0',
       description='该项目主要用于在vnpy框架下扩展部分 Trade Blazer (TB) 的函数包，以方便部分TB程序的迁移使用。',
       long_description=long_description,
       long_description_content_type="text/markdown",
